@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dan-Flavius Cioara - Head of IT Operations at Mantu with expertise in cloud technologies, automation, and global team leadership.">
+    <meta name="keywords" content="Dan-Flavius Cioara, IT Operations, Cloud Manager, Infrastructure, DevOps, Team Leadership, Mantu, Azure, AWS, Kubernetes, Terraform, Ansible">
+    <meta name="author" content="Dan-Flavius Cioara">
+    <meta name="robots" content="index, follow">
+    <title>Dan-Flavius Cioara | IT Operations Leader | Cloud & Infrastructure Expert</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0B3954;
+            --secondary: #1D70A2;
+            --accent: #3E92CC;
+            --light: #F0F4F8;
+            --dark: #2C3E50;
+            --text: #444444;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: #F8FAFC;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .text-secondary {
+            color: var(--secondary);
+        }
+        
+        .border-primary {
+            border-color: var(--primary);
+        }
+        
+        .heading-underline {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .heading-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 60px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .heading-underline:hover::after {
+            width: 100px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 15px);
+            background-color: #D1D5DB;
+        }
+        
+        .timeline-item:hover::before {
+            transform: scale(1.3);
+            background-color: var(--secondary);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background-color: #E2E8F0;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background-color: var(--accent);
+            border-radius: 4px;
+            animation: skillFill 1.5s ease-in-out;
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .section {
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: calc(var(--order) * 0.2s);
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes skillFill {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: var(--skill-percentage);
+            }
+        }
+        
+        .profile-image {
+            transition: all 0.3s ease;
+            filter: saturate(0.9);
+        }
+        
+        .profile-image:hover {
+            filter: saturate(1.1);
+            transform: scale(1.02);
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            
+            .no-print {
+                display: none !important;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="mr-4">
+                    <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/person/dancioarapublic/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110105Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8965eb4ce151b3b50244c7f4b15c755b9dfbf46dd567694c45bbe17ac9936b7f" 
+                         alt="Dan-Flavius Cioara" 
+                         class="profile-image w-24 h-24 object-cover rounded-full border-4 border-white shadow-lg">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-primary">Dan-Flavius Cioara</h1>
+                    <h2 class="text-xl text-secondary">Head of IT Operations</h2>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <a href="mailto:contact@example.com" class="bg-primary text-white px-4 py-2 rounded-full flex items-center hover:bg-opacity-90 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Contact Me
+                </a>
+                <a href="https://www.linkedin.com/in/dancioarapublic/" target="_blank" class="bg-[#0077B5] text-white px-4 py-2 rounded-full flex items-center hover:bg-opacity-90 transition duration-300">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Profile Summary -->
+        <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 1">
+            <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Professional Summary</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    As the Head of IT Operations at Mantu, I lead a globally distributed team to deliver exceptional IT services across 60+ offices worldwide. With expertise in cloud technologies, operations and AI, I drive operational excellence, innovation, and sustainability.
+                </p>
+                <p class="mb-4">
+                    I manage diverse teams across regions, optimize IT budgets for efficiency, and align IT strategies with organizational goals to enhance service offerings. By implementing best practices, leveraging AI for data analysis and automation, and promoting energy-efficient technologies, I ensure our IT infrastructure supports the evolving needs of the business.
+                </p>
+                <p>
+                    Passionate about using technology to drive business success and operational efficiency, I am committed to transforming IT operations into a strategic asset.
+                </p>
+            </div>
+        </section>
+
+        <!-- Two Column Layout for Experience and Skills -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left Column - Experience -->
+            <div class="lg:w-2/3">
+                <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 2">
+                    <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Professional Experience</h2>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">Head of Information Technology Operations</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/mantugroup/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=a92bf87e9c17c91db51e28e38d195ed443d890a702f1443c19f05ab53b945cc1" 
+                                     alt="Mantu Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">Mantu</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">March 2024 - Present · France</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <p class="mb-3">
+                                Leading a dynamic and globally distributed team delivering exceptional IT services across 60+ offices worldwide. Driving operational excellence, innovation, and sustainability.
+                            </p>
+                            <ul class="list-disc pl-5 mb-3 space-y-2">
+                                <li>Leadership & Team Development of diverse IT professionals across multiple regions</li>
+                                <li>Strategic IT Planning aligned with organizational objectives</li>
+                                <li>Budget Management & Resource Optimization for cost-effectiveness</li>
+                                <li>AI Integration & Innovation across IT operations</li>
+                                <li>Sustainability Initiatives through energy-efficient technologies</li>
+                                <li>Cross-Team Collaboration & Global Coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">Infrastructure and Cloud Manager</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/mantugroup/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=a92bf87e9c17c91db51e28e38d195ed443d890a702f1443c19f05ab53b945cc1" 
+                                     alt="Mantu Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">Mantu</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">November 2022 - March 2024 · France</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <p class="mb-3">
+                                Oversaw two dynamic teams focused on infrastructure, cloud, and system management, driving initiatives related to Azure, AWS, and on-premise infrastructure.
+                            </p>
+                            <ul class="list-disc pl-5 mb-3 space-y-2">
+                                <li>Led cross-functional teams, fostering a collaborative, high-performance culture</li>
+                                <li>Applied technical expertise to guide successful cloud solutions and infrastructure projects</li>
+                                <li>Managed end-to-end project lifecycles, ensuring timely, budget-conscious delivery</li>
+                                <li>Led initiatives to optimize efficiency and scalability using cloud technologies</li>
+                                <li>Coordinated with teams across continents for seamless communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">Lead System Engineer</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/kyriba/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=0940e198e0ac37f25f12822075239d30c57ce4bc73e3bee469870a5dc67161ad" 
+                                     alt="Kyriba Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">Kyriba</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">August 2020 - November 2022 · Paris, France</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <p class="mb-3">
+                                Orchestrated the technical aspects of AWS cloud and on-premise infrastructure, technically overseeing a dedicated team.
+                            </p>
+                            <ul class="list-disc pl-5 mb-3 space-y-2">
+                                <li>Led design, implementation, and maintenance of AWS and on-premise infrastructure</li>
+                                <li>Provided technical leadership with expertise in Terraform, Ansible, Kubernetes, Docker Swarm, ArgoCD, and CI/CD pipelines</li>
+                                <li>Mentored technical operations professionals and fostered a collaborative culture</li>
+                                <li>Implemented automation solutions to streamline operational processes</li>
+                                <li>Managed CI/CD pipelines, ensuring rapid and reliable software delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">DevOps Engineer</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/amadeus/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=ba0378628d550642c78145f0863155e51e01ef5788a953da8995f3065b9b8326" 
+                                     alt="Amadeus Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">Amadeus</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">March 2020 - May 2020 · Nice, France</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <ul class="list-disc pl-5 mb-3 space-y-2">
+                                <li>Infrastructure migration to OpenShift</li>
+                                <li>OpenShift cluster management</li>
+                                <li>Automating migration processes</li>
+                                <li>Automating integration and deployment processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">DevOps Engineer</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/everseen-limited/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac98045c966ccdd2a17163fa162bd5b07f2476c8232c3a1b567779e9dfd7242f" 
+                                     alt="Everseen Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">Everseen</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">March 2018 - February 2020 · Romania</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <ul class="list-disc pl-5 mb-3 space-y-2">
+                                <li>Built and maintained production-ready infrastructure</li>
+                                <li>Automated internal processes from development to production</li>
+                                <li>Provided services for R&D and QA teams including repositories, build servers, and Kubernetes clusters</li>
+                                <li>Managed database administration and system monitoring</li>
+                                <li>Developed custom applications and scripts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-6">
+                        <button id="showMoreExperience" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded inline-flex items-center transition duration-300">
+                            <span>Show More Experience</span>
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div id="hiddenExperience" class="hidden mt-6">
+                        <div class="timeline-item">
+                            <div class="mb-2">
+                                <h3 class="text-xl font-semibold text-secondary">Information Technology Administrator</h3>
+                                <div class="flex items-center text-gray-600 mb-1">
+                                    <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/bearingpoint/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=7607370d8c1d1a4b6ca1eb480bfb6db4d43ca9c9e4ca6d4d9daa042ab334afd7" 
+                                        alt="BearingPoint Logo" 
+                                        class="w-5 h-5 mr-2 object-contain">
+                                    <span class="font-medium">BearingPoint</span>
+                                </div>
+                                <p class="text-gray-500 text-sm">November 2017 - March 2018 · Timisoara, Romania</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="mb-2">
+                                <h3 class="text-xl font-semibold text-secondary">System Administrator</h3>
+                                <div class="flex items-center text-gray-600 mb-1">
+                                    <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/atos/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9ec8b35129dbef731629a408062a31109c79b50274d9eacc2838a52b76bf704" 
+                                        alt="Atos Logo" 
+                                        class="w-5 h-5 mr-2 object-contain">
+                                    <span class="font-medium">Atos</span>
+                                </div>
+                                <p class="text-gray-500 text-sm">July 2016 - May 2017 · Timisoara, Romania</p>
+                            </div>
+                            <div class="text-gray-700">
+                                <p class="mb-3">Software Integrator and Office Specialist on Siemens Infrastructure:</p>
+                                <ul class="list-disc pl-5 mb-3 space-y-2">
+                                    <li>Integrated packages in SCCM infrastructure for Windows environments</li>
+                                    <li>Migrated from Windows 7 to Windows 10 within Siemens Infrastructure</li>
+                                    <li>Collaborated with multiple teams for stable environment</li>
+                                    <li>Specialized in Microsoft Office implementation and migration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="mb-2">
+                                <h3 class="text-xl font-semibold text-secondary">Owner/President</h3>
+                                <div class="flex items-center text-gray-600 mb-1">
+                                    <span class="font-medium">Nova Computers</span>
+                                </div>
+                                <p class="text-gray-500 text-sm">August 2012 - June 2016 · Romania</p>
+                            </div>
+                            <div class="text-gray-700">
+                                <p class="mb-3">IT Externalization for small/medium sized companies:</p>
+                                <ul class="list-disc pl-5 mb-3 space-y-2">
+                                    <li>Network and infrastructure administration for small/medium businesses</li>
+                                    <li>Experience with Windows Server environments and Linux infrastructures</li>
+                                    <li>Managed virtualization, storage, and backup systems</li>
+                                    <li>Developed web applications using various technologies</li>
+                                    <li>Managed contracts, finance, and employees</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 3">
+                    <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Education</h2>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">Bachelor's degree, Computer Science</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <img src="https://s3.us-west-000.backblazeb2.com/proxycurl/company/west-university-of-timisoara/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250502%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250502T110106Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=8206f449d56e704278c32c0be256596097e064e127b1bec7429c7d8b8b543911" 
+                                     alt="West University of Timisoara Logo" 
+                                     class="w-5 h-5 mr-2 object-contain">
+                                <span class="font-medium">West University of Timisoara</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">2009 - 2013</p>
+                        </div>
+                        <div class="text-gray-700">
+                            <p class="mb-2">Activities and societies: ASSEUT, UNSR.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-secondary">Highschool, Mathematics and Informatics</h3>
+                            <div class="flex items-center text-gray-600 mb-1">
+                                <span class="font-medium">Colegiul National "Iancu de Hunedoara"</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">2005 - 2009</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Right Column - Skills & Certifications -->
+            <div class="lg:w-1/3">
+                <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 4">
+                    <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Technical Skills</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">Cloud Technologies</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Microsoft Azure</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">AWS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Kubernetes</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 92%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">OpenShift</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">DevOps & Automation</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Terraform</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Ansible</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">CI/CD Pipelines</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 88%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Docker</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">Management & Strategy</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Team Leadership</span>
+                                    <span>96%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 96%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Strategic Planning</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Budget Management</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 88%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium">Cross-cultural Collaboration</span>
+                                    <span>94%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-percentage: 94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 5">
+                    <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Certifications</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="card p-4 border border-gray-200 hover:border-secondary">
+                            <h3 class="font-semibold text-lg mb-1 text-secondary">Advanced Terraform</h3>
+                            <p class="text-gray-600 text-sm">LinkedIn · March 2022</p>
+                            <a href="https://www.linkedin.com/learning/certificates/0f99338657a3ef5abc961f2382197e8e4d23ea0b49f28eeeb1544f84782a09be" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="card p-4 border border-gray-200 hover:border-secondary">
+                            <h3 class="font-semibold text-lg mb-1 text-secondary">Kubernetes: GitOps with ArgoCD</h3>
+                            <p class="text-gray-600 text-sm">LinkedIn · March 2022</p>
+                            <a href="https://www.linkedin.com/learning/certificates/ce0ee89c16403d0ee34eeaca956df08b1212416dce328a82345f0229a262ae7c" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="card p-4 border border-gray-200 hover:border-secondary">
+                            <h3 class="font-semibold text-lg mb-1 text-secondary">Learning Kubernetes</h3>
+                            <p class="text-gray-600 text-sm">LinkedIn · June 2019</p>
+                            <a href="https://www.linkedin.com/learning/certificates/623af1883e3486386b7c031b500d337ab2bf26249d0c7ace17045f49d1e1ad16" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                        
+                        <div id="hiddenCertifications" class="hidden space-y-6">
+                            <div class="card p-4 border border-gray-200 hover:border-secondary">
+                                <h3 class="font-semibold text-lg mb-1 text-secondary">Learning Ansible</h3>
+                                <p class="text-gray-600 text-sm">LinkedIn · May 2019</p>
+                                <a href="https://www.linkedin.com/learning/certificates/b9a9077fd58e824235af53d0edd2dfc6e532585dffe23fe2be2befc1a81c3141" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                    View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="card p-4 border border-gray-200 hover:border-secondary">
+                                <h3 class="font-semibold text-lg mb-1 text-secondary">Elasticsearch Essential Training</h3>
+                                <p class="text-gray-600 text-sm">LinkedIn · November 2018</p>
+                                <a href="https://www.linkedin.com/learning/certificates/48c548c6fad8f5a6d225fd5876ab97df1f1e017dfc6643faecc3d5dbff49f703" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                    View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="card p-4 border border-gray-200 hover:border-secondary">
+                                <h3 class="font-semibold text-lg mb-1 text-secondary">Blender: Character Modeling</h3>
+                                <p class="text-gray-600 text-sm">LinkedIn · October 2018</p>
+                                <a href="https://www.linkedin.com/learning/certificates/c81d0dcb129037dc5254111d045833483ce5c7d3141f78b9d0e24f2cae76b8eb" target="_blank" class="text-accent text-sm mt-2 inline-block hover:underline">
+                                    View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button id="showMoreCerts" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded inline-flex items-center transition duration-300">
+                                <span>Show More Certifications</span>
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 6">
+                    <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Languages</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Romanian</span>
+                                <span>Native</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-percentage: 100%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">English</span>
+                                <span>Full Professional</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-percentage: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">French</span>
+                                <span>Limited Working</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-percentage: 60%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Italian</span>
+                                <span>Elementary</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-percentage: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Location Section -->
+        <section class="section mb-12 bg-white rounded-lg shadow-md p-6" style="--order: 7">
+            <h2 class="text-2xl font-bold mb-6 heading-underline text-primary">Current Location</h2>
+            <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-2xl text-secondary mr-4"></i>
+                <div>
+                    <p class="text-xl font-medium">Grasse, Provence-Alpes-Côte d'Azur, France</p>
+                    <p class="text-gray-600">Operating globally with experience across European and international markets</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Dan-Flavius Cioara</h3>
+                    <p>Head of IT Operations • Cloud & Infrastructure Expert</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/dancioarapublic/" target="_blank" class="hover:text-accent transition duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:contact@example.com" class="hover:text-accent transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-sm opacity-80">
+                <p>© 2024 Dan-Flavius Cioara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Show more experience button functionality
+        document.getElementById('showMoreExperience').addEventListener('click', function() {
+            const hiddenExperience = document.getElementById('hiddenExperience');
+            const button = document.getElementById('showMoreExperience');
+            
+            if (hiddenExperience.classList.contains('hidden')) {
+                hiddenExperience.classList.remove('hidden');
+                button.innerHTML = '<span>Show Less Experience</span><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>';
+            } else {
+                hiddenExperience.classList.add('hidden');
+                button.innerHTML = '<span>Show More Experience</span><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>';
+            }
+        });
+        
+        // Show more certifications button functionality
+        document.getElementById('showMoreCerts').addEventListener('click', function() {
+            const hiddenCerts = document.getElementById('hiddenCertifications');
+            const button = document.getElementById('showMoreCerts');
+            
+            if (hiddenCerts.classList.contains('hidden')) {
+                hiddenCerts.classList.remove('hidden');
+                button.innerHTML = '<span>Show Less Certifications</span><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>';
+            } else {
+                hiddenCerts.classList.add('hidden');
+                button.innerHTML = '<span>Show More Certifications</span><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>';
+            }
+        });
+        
+        // Apply animations to sections
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            
+            // Add observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
